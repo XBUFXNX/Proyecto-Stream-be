@@ -1,0 +1,96 @@
+/* Fuente personalizada para darle un toque más moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f8e9; /* Verde suave */
+}
+
+#juego-contenedor {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#titulo-juego {
+    font-size: 28px;
+    color: #455a64; /* Azul grisáceo */
+    margin-bottom: 20px;
+}
+
+#cuadricula {
+    display: grid;
+    grid-template-columns: repeat(5, 55px);
+    grid-gap: 10px;
+    margin-bottom: 25px;
+}
+
+.caja-letra {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #cfd8dc;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    color: #37474f; /* Gris oscuro */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.correcto {
+    background-color: #81c784; /* Verde suave */
+    color: white;
+    border-color: #4caf50;
+}
+
+.presente {
+    background-color: #ffb74d; /* Naranja suave */
+    color: white;
+    border-color: #fb8c00;
+}
+
+.ausente {
+    background-color: #cfd8dc; /* Gris claro */
+    color: white;
+    border-color: #b0bec5;
+}
+
+#teclado {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tecla {
+    padding: 10px;
+    background-color: #b3e5fc; /* Azul cielo */
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tecla:hover {
+    background-color: #81d4fa; /* Azul un poco más oscuro */
+}
+
+#mensaje {
+    font-size: 18px;
+    color: #d32f2f; /* Rojo oscuro */
+    font-weight: bold;
+    margin-top: 15px;
+    transition: opacity 0.3s ease;
+}
